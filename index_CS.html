@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style_CS.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <a href="#" class="logo">
+            <img src="images/cs-logo.png" alt="" href="#home">
+        </a>
+
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#review">Review</a>
+            <a href="#pedido">Pedido</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-icon"></i>
+            <i href="#" class="fas fa-heart" id="fav-icon"></i>
+            <a><i href="#" class="fas fa-shopping-cart" id="cart-icon"></i></a>
+            <a><i class="fas fa-bars" id="menu-bars"></i></a>
+        </div>
+
+        <div class="search-form">
+            <input type="search" name="" id="search-box" placeholder="perquisar...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="fav-items-cont">
+            <div class="fav-item">
+                <span class="fas fa-times"></span>
+                <img src="images/menu-3.png" alt="">
+                <div class="content">
+                    <h3>Expresso Latte</h3>
+                <div class="price">R$ 19,99</div>
+                </div>
+            </div>
+            <div class="fav-item">
+                <span class="fas fa-times"></span>
+                <img src="images/menu-6.png" alt="">
+                <div class="content">
+                    <h3>Café Preto</h3>
+                <div class="price">R$ 12,99</div>
+                </div>
+            </div>
+            <a href="#" class="btn">Meus Favoritos</a>
+        </div>
+
+        <div class="cart-items-cont">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/menu-5.png" alt="">
+                <div class="content">
+                    <h3>Café Com Leite</h3>
+                <div class="price">R$ 11,00</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/menu-1.png" alt="">
+                <div class="content">
+                    <h3>Mocha Especial</h3>
+                <div class="price">R$ 14,99</div>
+                </div>
+            </div>
+            <a href="#" class="btn">finalizar</a>
+        </div>
+
+    </header>
+
+    <!-- Home -->
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slide">
+
+            <div class="swiper-wrapper wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Especial do dia...</span>
+                        <h3>Café Expresso</h3>
+                        <p>Com o passar dos cafés, os anos ficam melhores.</p>
+                        <a href="#" class="btn">fazer pedido</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/slide-coffee-3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Especial do dia...</span>
+                        <h3>Café Com Leite</h3>
+                        <p>Com o passar dos cafés, os anos ficam melhores.</p>
+                        <a href="#" class="btn">fazer pedido</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/slide-coffee-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Especial do dia...</span>
+                        <h3>Tradicional Café Preto</h3>
+                        <p>Com o passar dos cafés, os anos ficam melhores.</p>
+                        <a href="#" class="btn">fazer pedido</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/slide-coffee-1.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+        
+    </section>
+
+    <!--Menu-->
+
+    <section class="menu" id="menu">
+
+        <h3 class="sub-heading"> M E N U </h3>
+        <h1 class="heading"> + pedidos </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/menu-1.png" alt="">
+                <h3>Mocha Especial</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="preco">R$ 14,99</span>
+                <br>
+                <a href="#" class="btn">adicionar ao carrinho</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/menu-2.png" alt="">
+                <h3>Expresso Chocolate</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="preco">R$ 19,99</span>
+                <br>
+                <a href="#" class="btn">adicionar ao carrinho</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/menu-3.png" alt="">
+                <h3>Expresso Latte</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="preco">R$ 19,99</span>
+                <br>
+                <a href="#" class="btn">adicionar ao carrinho</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/menu-4.png" alt="">
+                <h3>Expresso Canela</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="preco">R$ 13,99</span>
+                <br>
+                <a href="#" class="btn">adicionar ao carrinho</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/menu-5.png" alt="">
+                <h3>Café Com Leite</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="preco">R$ 11,00</span>
+                <br>
+                <a href="#" class="btn">adicionar ao carrinho</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <img src="images/menu-6.png" alt="">
+                <h3>Café Preto</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="preco">R$ 12,99</span>
+                <br>
+                <a href="#" class="btn">adicionar ao carrinho</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--sobre-->
+
+    <section class="sobre" id="sobre">
+        
+        <h3 class="sub-heading"> S O B R E </h3>
+        <h1 class="heading"> Por que escolher a CoffeeShop? </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/cafe-graos.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>O Melhor café dos cafés</h3>
+                <p>Nossas bebidas quentes são preparadas apenas com gãos selecionados,
+                    oferecendo um sabor único e sofisticado em seu paladar. 
+                    Cada pedido é preparado com muito carinho e cuidado.</p>
+                <p>Vai um cafezinho aí? Qualquer que seja sua preferência, 
+                    temos opções irresistíveis.</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Entrega GRÁTIS</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-brazilian-real-sign"></i>
+                        <span>Pagamento FÁCIL</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">ler mais</a>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!--Review-->
+
+    <section class="review" id="review">
+
+        <h3 class="sub-heading"> R E V I E W </h3>
+        <h1 class="heading"> Os clientes opinam... </h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper wrapper">
+
+                <div class="swiper-slide slide">
+                    <img src="images/quote-img.png" alt="" class="aspas">
+                    <div class="user">
+                        <img src="images/perfil-1.png" alt="" class="perfil">
+                        <div class="user-info">
+                            <h3>Ana Clara</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Melhor café expresso de todos!!!! Super recomendo.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="images/quote-img.png" alt="" class="aspas">
+                    <div class="user">
+                        <img src="images/perfil-2.png" alt="" class="perfil">
+                        <div class="user-info">
+                            <h3>Lara Dias</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Sabores bem sofisticados, recomendo o café preto.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="images/quote-img.png" alt="" class="aspas">
+                    <div class="user">
+                        <img src="images/perfil-3.png" alt="" class="perfil">
+                        <div class="user-info">
+                            <h3>Leo S.</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Ótimo atendimento e café super saboroso.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="images/quote-img.png" alt="" class="aspas">
+                    <div class="user">
+                        <img src="images/perfil-4.png" alt="" class="perfil">
+                        <div class="user-info">
+                            <h3>Van</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>O café preto é perfeito!! Combina muito com chocolate.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Pedido-->
+
+    <section class="pedido" id="pedido">
+
+        <h3 class="sub-heading"> P E D I D O </h3>
+        <h1 class="heading"> Fácil e rápido </h1>
+
+        <form action="">
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>Nome:</span>
+                    <input type="text" placeholder="Digite seu nome">
+                </div>
+                <div class="input">
+                    <span>Número:</span>
+                    <input type="number" placeholder="Digite seu número">
+                </div>
+            </div>
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>Pedido:</span>
+                    <input type="text" placeholder="Digite seu pedido">
+                </div>
+                <div class="input">
+                    <span>Extra(opcional):</span>
+                    <input type="text" placeholder="Digite seu adicional">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>Quantidade:</span>
+                    <input type="text" placeholder="Digite quantos itens">
+                </div>
+                <div class="input">
+                    <span>Data e hora:</span>
+                    <input type="datetime-local">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>Endereço:</span>
+                    <textarea name="" class="area" placeholder="Digite seu Endereço" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>Sua mensagem(opcional):</span>
+                    <textarea name="" class="area" placeholder="Digite alguma mensagem" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="pedir" class="btn">
+
+        </form>
+
+    </section>
+
+    <!--footer-->
+    
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Fale com a gente</h3>
+                <a href="#">(11) 91234-5678</a>
+                <a href="#">coffeeshop@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Redes sociais</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+
+            <div class="box">
+                <h3>Links rápidos</h3>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#review">Review</a>
+                <a href="#pedido">Pedido</a>
+            </div>
+
+
+        </div>
+
+        <div class="creditos"> &copy <span>4m4nd4</span></div>
+
+    </section>
+
+    <!--loader-->
+    <div class="loader-container">
+        <img src="images/loaderCS.gif" alt="">
+    </div>
+
+
+    <!--Scrips-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="script_CS.js"></script>
+</body>
+</html>
